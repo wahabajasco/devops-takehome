@@ -6,15 +6,16 @@ Below is a take-home assignment before the interview for the position. You are r
 4. Bring your deployment and result to the next interview session.
 
 ### Situation
-McDonald is transforming their business during COVID-19. They wanted to build an online order system to tackle with current challenge. As one of the devops engineer in the project, your task is to deploy the prototype that completed by the development team and make it available to the internet for McDonald.
+PrunedgeFood is transforming their business during for 2023. They wanted to build an online order system to help scale their ordering service. As one of the devops engineer in the project, your task is to deploy the prototype that has been completed by the development team and make it available to the internet for PrunedgeFood.
 
 Below is the information given by the development team
 
 ### Global environment requirement
-- start a mongodb instance, reachable for backend
+- start a mongodb instance, reachable for backend 
+
 
 ### Starting the backend
-- required nodejs 14
+- required nodejs 16
 - set environment variable `MONGODB_URL="<mongodb connection url>"`, where `<mongodb connection url>` must match the [official mongodb node driver uri](https://docs.mongodb.com/drivers/node/current/fundamentals/connection/#connection-uri)
 - navigate to backend directory `cd backend`
 - build using npm `npm install`
@@ -34,11 +35,11 @@ You may use the following free resource for the deployment
 
 ### Requirement
 Your deployment must meet the following criteria:
-- A working FE which reachable through internet
+- A working FE which is reachable through internet
 - Monitoring and recovery for different resource
 - Documentation for the deployment plan
 
 ### Tips on completing this assignment
-- Use the best tools you have on hand.
+- Use the best tools you have at hand.
 - Try to scope your working hour within 3 hours (1 hour per day if you really busy) and avoid unnecessary optimization and documentation.
 - Communicate effectively like you are going to communicate with the actual team member.

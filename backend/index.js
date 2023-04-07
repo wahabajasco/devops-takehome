@@ -3,10 +3,10 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const port = 3000;
-const url = process.env.MONGODB_URL;
+const url = "mongodb+srv://iamwajasco:dbpass2023@devopsassignment.qrjtvlw.mongodb.net/?retryWrites=true&w=majority";
 const dbName = "DevOpsAssignment";
 
-const client = new MongoClient(url);
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const globalOrder = [];
 

@@ -1,7 +1,7 @@
 # Define variables for resource names and locations
 variable "resource_group_name" {
   description = "The resource group for the app deployment"
-  default = "prunedge"
+  default = "prunedge-RG"
 }
 
 variable "location" {

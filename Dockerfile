@@ -12,6 +12,6 @@ COPY frontend/ frontend/
 # Expose port 8080 for the backend
 EXPOSE 8080
 # Set the environment variable for MongoDB connection URL
-ENV MONGODB_URL
+ENV MONGODB_URL=$(MONGODB_URL)
 # Start the backend server
 CMD ["node", "backend/index.js"]

@@ -2,6 +2,8 @@
 FROM node:16
 # Set the working directory to /app
 WORKDIR /app
+RUN mkdir -p backend
+RUN mkdir -p frontend
 # Copy the package.json file for the backend to the container
 COPY backend/package.json /backend
 # Install dependencies

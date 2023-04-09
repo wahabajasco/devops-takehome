@@ -23,9 +23,9 @@ stages:
           backendServiceArm: 'prunedgeServiceConnection'
           backendAzureRmSubscriptionId: '$(azureSubID)'
           backendAzureRmResourceGroupName: 'terraform-RG'
-          backendAzureRmStorageAccountName: 'jsbrtorageaccounts'
-          backendAzureRmContainerName: 'jsbrcontainer'
-          backendAzureRmKey: 'jsbrterraform.tfstate'
+          backendAzureRmStorageAccountName: 'prunedgetorageaccounts'
+          backendAzureRmContainerName: 'prunedgecontainer'
+          backendAzureRmKey: 'prunedgeterraform.tfstate'
           allowTelemetryCollection: true
           
       - task: TerraformCLI@0

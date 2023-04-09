@@ -25,7 +25,7 @@ resource "azurerm_application_insights" "insight" {
   name                = var.insight_name
   location            = var.location
   resource_group_name = var.resource_group_name
-  application_type    = "node"
+  application_type    = "Node.JS"
   retention_in_days   = 30
   
   depends_on = [azurerm_container_registry.acr]

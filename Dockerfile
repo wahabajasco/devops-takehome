@@ -12,6 +12,7 @@ COPY frontend/ ./frontend
 RUN cd backend && npm install
 # Expose port 8080 for the backend
 EXPOSE 8080
+EXPOSE 3000
 # Set the environment variable for MongoDB connection URL
 ENV MONGODB_URL=$(MONGODB_URL)
 # Start the backend server

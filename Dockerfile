@@ -2,18 +2,17 @@
 FROM node:16
 # Set the working directory to /app
 WORKDIR /app
-RUN mkdir -p backend
-RUN mkdir -p frontend
 # Copy the package.json file for the backend to the container
-COPY backend/package.json /backend
+#COPY backend/package.json ./backend
 # Install dependencies
-RUN cd backend && npm install
+#RUN cd backend && npm install
 # Copy the backend and frontend source code to the container
-COPY backend/ backend/
-COPY frontend/ frontend/
+COPY backend/ ./backend
+COPY frontend/ ./frontend
+RUN cd backend && npm install
 # Expose port 8080 for the backend
 EXPOSE 8080
 # Set the environment variable for MongoDB connection URL
 ENV MONGODB_URL=$(MONGODB_URL)
 # Start the backend server
-CMD ["node", "backend/index.js"]
+CMD ["node", "./backend/index.js"]

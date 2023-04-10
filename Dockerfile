@@ -9,6 +9,8 @@ COPY backend/package.json ./backend
 # Install dependencies
 WORKDIR /usr/src/app/backend
 RUN npm install
+# Set the working directory back to /usr/src/app
+WORKDIR /usr/src/app
 # Copy all the source code to the container image
 COPY . .
 # Set the backend URL environment variable

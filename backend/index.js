@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const port = 3000;
-const uri = $(MONGODB_URL);
+const uri = ${{ vars.MONGODB_URL }};
 const dbName = "DevOpsAssignment";
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });

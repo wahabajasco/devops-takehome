@@ -10,6 +10,10 @@ COPY backend/package.json ./backend
 RUN cd backend && npm install
 # Copy all the source code to the container image
 COPY . .
+# Set the backend URL environment variable
+ENV BACKEND_URL="http://localhost:3000"
+# Expose port 3000 for the backend
+EXPOSE 3000
 ## Expose port 8080
 EXPOSE 8080
 # Set the environment variable for MongoDB connection URL

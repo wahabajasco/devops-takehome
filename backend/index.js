@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const port = 3000;
-const uri = "mongodb+srv://iamwajasco:dbpass2023@devopsassignment.qrjtvlw.mongodb.net/?retryWrites=true&w=majority";
+const uri = $(MONGODB_URL);
 const dbName = "DevOpsAssignment";
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });

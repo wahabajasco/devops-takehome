@@ -1,13 +1,14 @@
 # Use an official Node.js runtime as a parent image
 FROM node:16
-# Set the working directory to /app
-WORKDIR /app
+# Set the working directory to /usr/src/app
+WORKDIR /usr/src/app
 # Create backend folder in the working directory
 RUN mkdir -p backend
 # Copy the package.json file from the backend folder to the container backend
 COPY backend/package.json ./backend
 # Install dependencies
-RUN cd backend && npm install
+WORKDIR /usr/src/app/backend
+RUN npm install
 # Copy all the source code to the container image
 COPY . .
 # Set the backend URL environment variable

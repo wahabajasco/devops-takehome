@@ -23,3 +23,4 @@ EXPOSE 8080
 ENV MONGODB_URL=$(MONGODB_URL)
 # Start the backend server
 CMD ["node", "./backend/index.js"]
+

@@ -18,7 +18,7 @@ ENV BACKEND_URL="http://localhost:3000"
 # Expose port 3000 for the backend
 EXPOSE 3000
 ## Expose port 8080
-EXPOSE 8080
+#EXPOSE 8080
 # Set the environment variable for MongoDB connection URL
 ENV MONGODB_URL=$(MONGODB_URL)
 # Start the backend server
